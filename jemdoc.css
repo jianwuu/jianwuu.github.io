@@ -359,9 +359,59 @@ tr.heading {
 
 img {
     border: none;
+    max-width: 100%;
+    height: auto;
 }
 
 table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
+}
+
+@media screen and (max-width: 700px) {
+	body {
+		font-size: 95%;
+	}
+
+	#tlayout, #tlayout > tbody, #tlayout > tbody > tr, #tlayout > tbody > tr > td {
+		display: block;
+		width: auto !important;
+	}
+
+	#layout-menu {
+		white-space: normal;
+		border-bottom: 1px solid #dddddd;
+	}
+
+	#layout-content {
+		padding-left: 0.8em;
+		padding-right: 0.8em;
+	}
+
+	table.imgtable, table.imgtable > tbody, table.imgtable > tbody > tr, table.imgtable > tbody > tr > td {
+		display: block;
+		width: auto !important;
+	}
+
+	table.imgtable img {
+		display: block;
+		margin: 0 auto 0.8em auto;
+	}
+
+	table.imgtable td[align="left"] {
+		text-align: left;
+	}
+
+	h1 {
+		font-size: 145%;
+	}
+
+	h2 {
+		font-size: 120%;
+	}
+
+	#googleMap {
+		width: auto !important;
+		max-width: 150px;
+	}
 }
