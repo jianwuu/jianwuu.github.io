@@ -17,11 +17,17 @@
   list-style: none;
   counter-increment: list;
   }
-  ol > li::before { 
-            content: "[" counter(list) "] "; /* Add brackets around the counter */ 
-        } 
-  
-</style> 
+  ol > li::before {
+            content: "[" counter(list) "] "; /* Add brackets around the counter */
+        }
+  p.pub-summary {
+      margin-top: 0.2em;
+      margin-bottom: 0.8em;
+      margin-left: 1.3em;
+      color: #444444;
+      font-size: 95%;
+  }
+</style>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -62,21 +68,33 @@ B.Eng in Industrial Engineering and Technology Management (First Class Honor)</p
 
 
 <ol>
-<li>Solving the Price-Setting Newsvendor Problem with Parametric Operational Data Analytics (ODA). <i> Management Science</i> (with L. Y. Chu, Q. Feng, J. G. Shanthikumar and Z. J. M. Shen) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4400568">[pdf]</a></li>
+<li>Solving the Price-Setting Newsvendor Problem with Parametric Operational Data Analytics (ODA). <i> Management Science</i> (with L. Y. Chu, Q. Feng, J. G. Shanthikumar and Z. J. M. Shen) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4400568">[pdf]</a>
+<p class="pub-summary">We study how a retailer should jointly set price and order quantity when the demand model's parameters are unknown and data is limited. Our operational data analytics (ODA) approach directly learns the ordering and pricing decision from data rather than first estimating the unknown parameters, yielding substantially more robust profits, especially when sample sizes are small.</p>
+</li>
 
-<li>Contextual Data-Integrated Newsvendor Solution with Operational Data Analytics (ODA). <i>Management Science</i> (with Q. Feng and J. G. Shanthikumar) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4668658">[pdf]</a></li>
+<li>Contextual Data-Integrated Newsvendor Solution with Operational Data Analytics (ODA). <i>Management Science</i> (with Q. Feng and J. G. Shanthikumar) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4668658">[pdf]</a>
+<p class="pub-summary">We extend the data-integrated newsvendor framework to settings where demand depends on contextual covariates. By restricting attention to equivariant decision rules and developing an adaptive-boosting-based data-integration approach, we obtain inventory policies that are robust and provably consistent even when the demand distribution is unknown.</p>
+</li>
 
-<li>Robust Data-Driven Quasiconcave Optimization. Accepted, <i>INFORMS Journal on Computing</i> (with W. B. Haskell, W. Huang and H. Xu) <a href="https://arxiv.org/abs/2508.19787">[pdf]</a></li>
+<li>Robust Data-Driven Quasiconcave Optimization. Accepted, <i>INFORMS Journal on Computing</i> (with W. B. Haskell, W. Huang and H. Xu) <a href="https://arxiv.org/abs/2508.19787">[pdf]</a>
+<p class="pub-summary">We consider maximizing an unknown quasiconcave objective function using only a finite sample of data points. We formulate a robust optimization problem over the set of quasiconcave functions consistent with the data and solve it efficiently via a binary search over upper level sets, demonstrating strong performance on production-efficiency and fair resource allocation applications.</p>
+</li>
 </ol>
 
 <h2>Working Papers</h2>
 
 <ol>
-<li>Efficiently Computing the Quasi-Concave Envelope with Incomplete Information. <i>Under major revision, SIAM Journal on Optimization</i>. (with W. B. Haskell, W. Huang and H. Xu) <a href="https://arxiv.org/abs/2008.13309">[pdf]</a></li>
+<li>Efficiently Computing the Quasi-Concave Envelope with Incomplete Information. <i>Under major revision, SIAM Journal on Optimization</i>. (with W. B. Haskell, W. Huang and H. Xu) <a href="https://arxiv.org/abs/2008.13309">[pdf]</a>
+<p class="pub-summary">We develop an efficient algorithm for computing the quasiconcave envelope of a function observed only at a limited set of data points, subject to structural properties such as monotonicity and Lipschitz continuity. Our two-step procedure solves the value and interpolation problems using only a polynomial and a logarithmic number of linear programs, respectively, and we apply it to estimate production functions from data.</p>
+</li>
 
-<li>Operational Data Analytics (ODA) Embedded Neural Network Learning for the Newsvendor Problem with General Demand. <i>Work in progress</i> (with Q. Feng and J. G. Shanthikumar)</li>
+<li>Operational Data Analytics (ODA) Embedded Neural Network Learning for the Newsvendor Problem with General Demand. <i>Work in progress</i> (with Q. Feng and J. G. Shanthikumar)
+<p class="pub-summary">We tackle the contextual newsvendor problem when demand depends nonlinearly on high-dimensional covariates and data is scarce. We embed the structural insights of operational data analytics into neural network learning through data augmentation and learned covariate transformations, consistently outperforming conventional data-driven benchmarks in the small-sample regime.</p>
+</li>
 
-<li>Proximal Systems for Inventory Management under Positive Lead Times. <i>Submitted</i> (with Q. Feng, J. G. Shanthikumar and Y. Yang)</li>
+<li>Proximal Systems for Inventory Management under Positive Lead Times. <i>Submitted</i> (with Q. Feng, J. G. Shanthikumar and Y. Yang)
+<p class="pub-summary">We study lost-sales inventory systems with positive replenishment lead times, where order history and stockouts make optimal control notoriously difficult. We introduce proximal systems that reinterpret performance accounting to derive simple constant-order and base-stock policies with asymptotic optimality guarantees, then interpolate between them with a single tuning parameter to obtain a policy that is both simple and consistently near-optimal.</p>
+</li>
 </ol>
 
 <h2>Teaching</h2>
